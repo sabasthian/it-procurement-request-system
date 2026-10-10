@@ -370,3 +370,64 @@ Administrators can monitor users, manage roles and account status, view request 
 ![Administrator Dashboard](docs/screenshots/admin-dashboard.png)
 
 Project Status: Portfolio Project — Local Development
+
+
+## Backend API Documentation
+
+The backend exposes REST API endpoints for authentication, procurement request management, and administrative operations.
+
+### API Base URL
+
+```text
+http://localhost:5000/api
+```
+
+### API Modules
+
+| Module | Base Path | Purpose |
+|---|---|---|
+| Authentication | `/api/auth` | User authentication |
+| Procurement Requests | `/api/requests` | Request submission and procurement workflow |
+| Administration | `/api/admin` | User management and administrative monitoring |
+
+### Administrative Endpoints
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/api/admin/users` | Retrieve user records |
+| PATCH | `/api/admin/users/:id/toggle-status` | Activate or deactivate a user |
+| PATCH | `/api/admin/users/:id/role` | Update a user's role |
+
+Administrative endpoints require authentication and the appropriate authorization permissions.
+
+### Authentication and Authorization
+
+The application uses JSON Web Tokens (JWT) to authenticate users and protect restricted API endpoints.
+
+Protected requests must include a valid access token in the HTTP Authorization header:
+
+```http
+Authorization: Bearer <access_token>
+```
+
+The backend uses authentication and role-based authorization middleware to restrict access to protected operations.
+
+### HTTP Status Codes
+
+| Status | Meaning |
+|---|---|
+| `200 OK` | Request processed successfully |
+| `201 Created` | Resource created successfully |
+| `400 Bad Request` | Invalid request data |
+| `401 Unauthorized` | Authentication is missing or invalid |
+| `403 Forbidden` | User lacks the required permissions |
+| `404 Not Found` | Requested resource does not exist |
+| `500 Internal Server Error` | Unexpected server error |
+
+Actual responses and status codes may vary by endpoint and implementation.
+
+### API Testing
+
+API endpoints can be tested using Postman or another HTTP client.
+
+For endpoint-specific request bodies, validation rules, and response examples, consult the backend route and controller implementations.
