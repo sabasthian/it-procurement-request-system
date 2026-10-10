@@ -322,3 +322,49 @@ No open-source license has been added to this repository yet. Unless a license i
 
 **Project:** IT Procurement Request Management System  
 **Repository:** [GitHub](https://github.com/sabasthian/it-procurement-request-system)
+
+
+"email": "admin@example.com",
+"password": "Admin123!"
+
+
+
+"email": "william@example.com",
+"password": "Password123!"
+
+
+
+"email": "procurement@example.com",
+"password": "Procurement123!"
+
+
+
+"email": "supervisor@example.com",
+"password": "Password123!"
+
+## Application Screenshots
+
+### Login Page
+The login interface provides access to the procurement workspace.
+
+![Login Page](docs/screenshots/login.png)
+
+### Employee Dashboard
+Employees can view their procurement request summaries, search and filter requests, and access request details.
+
+![Employee Dashboard](docs/screenshots/employee-dashboard.png)
+
+### Supervisor Dashboard
+Supervisors can review pending requests and monitor requests requiring approval.
+
+![Supervisor Dashboard](docs/screenshots/supervisor-dashboard.png)
+
+### Procurement Dashboard
+Procurement staff can monitor approved requests and track procurement processing.
+
+![Procurement Dashboard](docs/screenshots/procurement-dashboard.png)
+
+### Administrator Dashboard
+Administrators can monitor users, manage roles and account status, view request statistics, and filter procurement records.
+
+![Administrator Dashboard](docs/screenshots/admin-dashboard.png)
