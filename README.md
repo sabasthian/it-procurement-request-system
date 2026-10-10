@@ -368,3 +368,5 @@ Procurement staff can monitor approved requests and track procurement processing
 Administrators can monitor users, manage roles and account status, view request statistics, and filter procurement records.
 
 ![Administrator Dashboard](docs/screenshots/admin-dashboard.png)
+
+Project Status: Portfolio Project — Local Development
